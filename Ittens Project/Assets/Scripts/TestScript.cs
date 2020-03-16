@@ -5,18 +5,35 @@ using UnityEngine;
 public class TestScript : MonoBehaviour
 {
 
-    private int number;
+    int direction;
+
+    IEnumerator Coroutine()
+    {
+        while(true) 
+        {
+            direction = Random.Range(1, 5);                 // 1-up, 2-down, 3-left, 4-right
+            Debug.Log("Direction: " + direction);
+
+            yield return new WaitForSeconds(2f);
+
+            Debug.Log("Moving (2sec)");
+
+            yield return new WaitForSeconds(2f);
+
+            Debug.Log("Idling (2sec)");
+
+            yield return new WaitForSeconds(2f);
+        }
+    }
+
 
     void Start()
     {
-        for (int i=0; i<100; i++) {
-            number = Random.Range(1, 5);
-            Debug.Log(number);
-        }
+        StartCoroutine("Coroutine");
     }
 
     void Update()
     {
-
+        
     }
 }

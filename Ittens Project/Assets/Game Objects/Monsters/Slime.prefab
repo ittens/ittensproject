@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1821146348}
   - component: {fileID: 1821146349}
   - component: {fileID: 1821146351}
-  - component: {fileID: 1821146350}
+  - component: {fileID: 1152592704}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -142,7 +142,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.6, y: 0.45}
   m_Direction: 1
---- !u!114 &1821146350
+--- !u!114 &1152592704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,8 +151,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2761722290502975900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56026bf2832db7e4d9e0dfa59ae47b90, type: 3}
+  m_Script: {fileID: 11500000, guid: 285e36c62df5ec04a81717f8015da556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1821146349}
   anim: {fileID: 1821146348}
+  rb: {fileID: 1821146349}
