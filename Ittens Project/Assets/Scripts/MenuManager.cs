@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
         }
 
         public void LoadGame() {
-
+            // Testowy komentarz
 
         }
 
