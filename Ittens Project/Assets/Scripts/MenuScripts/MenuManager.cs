@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-
         public void NewGame() 
         {
             SceneManager.LoadScene("New Game");
